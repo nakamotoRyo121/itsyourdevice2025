@@ -1,1 +1,1 @@
-web: npx y-websocket-server --port $PORT
+web: y-websocket-server --port $PORT
