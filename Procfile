@@ -1,1 +1,1 @@
-worker: y-websocket-server --port $PORT
+web: node server.js
