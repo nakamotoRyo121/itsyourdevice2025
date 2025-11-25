@@ -5,7 +5,6 @@ import { setupWSConnection } from 'y-websocket/bin/utils.js';
 
 const app = express();
 
-// "/" にアクセスしたときに 200 を返す
 app.get('/', (req, res) => {
   res.send('Y-WebSocket server is running');
 });
