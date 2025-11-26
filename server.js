@@ -2,7 +2,8 @@
 import express from 'express';
 import http from 'http';
 import { WebSocketServer } from 'ws';
-import { setupWSConnection } from 'y-websocket/server';
+// import { setupWSConnection } from 'y-websocket/server';
+import { setupWSConnection } from "@y/websocket-server";
 import path from 'path';
 import { fileURLToPath } from 'url';
 

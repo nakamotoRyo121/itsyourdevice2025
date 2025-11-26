@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "node server.js",
     "build": "vite build",
     "heroku-postbuild": "npm run-script build",
-    "preview": "vite preview",
-    "start": "HOST=0.0.0.0 y-websocket-server --port $PORT"
+    "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^7.2.4"
