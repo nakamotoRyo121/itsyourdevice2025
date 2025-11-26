@@ -2,7 +2,8 @@
 import express from 'express';
 import http from 'http';
 import { WebSocketServer } from 'ws';
-import { setupWSConnection } from 'y-websocket/bin/utils.js'; // 古いバージョンなら利用可能
+// import { setupWSConnection } from 'y-websocket/bin/utils.js'; // 古いバージョンなら利用可能
+import { setupWSConnection } from 'y-websocket/server';
 
 const app = express();
 app.get('/', (req, res) => {

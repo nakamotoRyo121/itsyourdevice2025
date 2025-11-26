@@ -1,1 +1,1 @@
-web: node server.js
+web: npx y-websocket-server --port $PORT

@@ -1,19 +1,3 @@
-const ws = new WebSocket("wss://itsyourdevice2025-34c58387a3fa.herokuapp.com");
-
-ws.onopen = () => {
-  console.log("Connected to Heroku WebSocket server");
-  ws.send("Hello from client!");
-};
-
-ws.onmessage = (event) => {
-  console.log("Message from server:", event.data);
-};
-
-ws.onclose = () => {
-  console.log("Connection closed");
-};
-
-
 import * as Y from 'yjs';
 import { WebsocketProvider } from 'y-websocket';
 
