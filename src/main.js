@@ -2,7 +2,15 @@ import * as Y from 'yjs';
 import { WebsocketProvider } from 'y-websocket';
 
 const ydoc = new Y.Doc();
-const provider = new WebsocketProvider('wss://your-app-name.herokuapp.com', 'ws://localhost:1234', 'my-room', ydoc);
+const provider = new WebsocketProvider(
+  'wss://itsyourdevice2025-34c58387a3fa.herokuapp.com', // サーバーURL
+  'my-room',                                            // ルーム名
+  ydoc                                                  // ドキュメント
+);
+
+provider.on('status', event => {
+  console.log("WebSocket status:", event.status);
+});
 
 // 複数人の操作を保持する配列
 const yActions = ydoc.getArray('actions');
