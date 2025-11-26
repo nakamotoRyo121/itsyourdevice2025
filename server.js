@@ -2,8 +2,7 @@
 import express from 'express';
 import http from 'http';
 import { WebSocketServer } from 'ws';
-// import { setupWSConnection } from 'y-websocket/server';
-import { setupWSConnection } from "@y/websocket-server";
+import { setupWSConnection } from 'y-websocket/server';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -12,7 +11,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
-// Vite のビルド結果 (dist フォルダ) を静的配信
+// Vite のビルド結果を静的配信
 app.use(express.static(path.join(__dirname, 'dist')));
 
 // ルートで index.html を返す
