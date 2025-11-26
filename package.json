@@ -8,7 +8,7 @@
     "build": "vite build",
     "heroku-postbuild": "npm run-script build",
     "preview": "vite preview",
-    "start": "y-websocket-server --port $PORT"
+    "start": "HOST=0.0.0.0 y-websocket-server --port $PORT"
   },
   "devDependencies": {
     "vite": "^7.2.4"
